@@ -1,6 +1,6 @@
 package src.HelperFunctions;
 
-import Database.Address;
+import src.Database.Address;
 
 public class HelperFunctions {
 
@@ -36,7 +36,7 @@ public class HelperFunctions {
     //---------------------------------------------------------------------------------------
 public static String CheckCity(String city){
     if (!Address.getCityList().contains(city)){
-        throw new RuntimeException("We can not contunie yout process because, there is no shipping that location.");
+        throw new RuntimeException("We can not contunie your process because, there is no shipping that location.");
     }
     return city;
 }
